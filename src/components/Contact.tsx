@@ -24,11 +24,12 @@ const handleSubmit = async (e: React.FormEvent) => {
   setLoading(true);
 
   try {
-   const res = await fetch("https://portfolio-backend-phn4.onrender.com/api/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+  const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/send`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+});
+
 
 
     if (res.ok) {
