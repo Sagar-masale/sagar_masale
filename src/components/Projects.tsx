@@ -50,10 +50,13 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-slate-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
        <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-slate-800 mb-4">Projects That Define My Craft</h2>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+          Projects That Define My Craft
+        </h2>
+        <p className="text-base sm:text-xl text-slate-600 max-w-2xl mx-auto">
           A collection of my best work focused on clean code and real-world problem solving.
         </p>
+
       </div>
 
 
@@ -74,8 +77,12 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-slate-800 mb-4">{project.title}</h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">{project.description}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4">
+                  {project.title}
+                </h3>
+                <p className="text-sm sm:text-base text-slate-600 mb-6 leading-relaxed">
+                  {project.description}
+                </p>
                   
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
