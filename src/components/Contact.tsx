@@ -30,38 +30,38 @@ const Contact = () => {
     setFormData({ name: '', email: '', message: '' });
   };
 
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: 'Email',
-      value: 'alex.johnson@email.com',
-      href: 'mailto:alex.johnson@email.com'
-    },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
-    },
-    {
-      icon: MapPin,
-      label: 'Location',
-      value: 'San Francisco, CA',
-      href: '#'
-    }
-  ];
+const contactInfo = [
+  {
+    icon: Mail,
+    label: 'Email',
+    value: 'sagarmasalee@gmail.com',
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=sagarmasalee@gmail.com'
+  },
+  {
+    icon: Phone,
+    label: 'Phone',
+    value: '+91 77759 12356',
+    href: 'tel:+917775912356'
+  },
+  {
+    icon: MapPin,
+    label: 'Location',
+    value: 'Solapur, Maharashtra, India',
+    href: '#'
+  }
+];
 
   const socialLinks = [
     {
       icon: Github,
       name: 'GitHub',
-      href: '#',
+      href: 'https://github.com/Sagar-masale',
       color: 'hover:text-gray-800'
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      href: '#',
+      href: 'https://www.linkedin.com/in/sagar-masale/',
       color: 'hover:text-blue-600'
     },
     {
@@ -78,25 +78,23 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">Get In Touch</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Let's work together to bring your ideas to life. I'm always open to discussing new opportunities.
+            Let’s collaborate to turn your ideas into reality. I’m always excited to explore new projects and challenges.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+         
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-slate-800 mb-6">
                 Let's start a conversation
               </h3>
               <p className="text-slate-600 leading-relaxed mb-8">
-                I'm always interested in hearing about new projects and opportunities. 
-                Whether you're a company looking to hire, or you're looking to build something 
-                amazing together, I'd love to hear from you.
+              I’m always open to new ideas, collaborations, and opportunities. Whether you're hiring or have an exciting project in mind, feel free to reach out — I’d love to connect.
               </p>
             </div>
 
-            {/* Contact Details */}
+            
             <div className="space-y-4">
               {contactInfo.map((item, index) => (
                 <a
@@ -147,7 +145,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                  placeholder="John Doe"
+                  placeholder="Type your name..."
                 />
               </div>
 
@@ -163,7 +161,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                  placeholder="john@example.com"
+                  placeholder="you@example.com"
                 />
               </div>
 
@@ -179,7 +177,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Let me know how I can help..."
                 />
               </div>
 

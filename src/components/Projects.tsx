@@ -1,7 +1,8 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import pbsimg from "./images/pbsjewellers.png";
-
+import proEliteImg from "./images/proElite.png"
+import FolioImg from "./images/Folio.png"
 const Projects = () => {
   const projects = [
     {
@@ -15,14 +16,15 @@ const Projects = () => {
     },
 
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['React', 'Firebase', 'Material-UI', 'Socket.io'],
-      githubUrl: '#',
-      liveUrl: '#',
+      title: 'ProElite Technologies Website',
+      description: 'A professional business website built for ProElite Technologies. Features include responsive design, service listings, contact form, and modern UI to showcase company offerings effectively.',
+      image: proEliteImg,
+      technologies: ['Html', 'Css', 'Javascript'],
+      githubUrl: '#', // Add your actual GitHub repo link here if available
+      liveUrl: 'https://proelitetechnologies.com/',
       featured: true
     },
+
     {
       title: 'Weather Dashboard',
       description: 'A responsive weather application that provides current conditions and forecasts with beautiful data visualizations.',
@@ -34,13 +36,14 @@ const Projects = () => {
     },
     {
       title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website showcasing my work and skills with smooth animations and optimized performance.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-      technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Netlify'],
-      githubUrl: '#',
-      liveUrl: '#',
+      description: 'A responsive and performance-optimized portfolio built with modern technologies. It showcases my projects, skills, and experience with smooth transitions and clean UI.',
+      image: FolioImg,
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Vercel', 'Render'],
+      githubUrl: 'https://github.com/Sagar-masale/sagar_masale',
+      liveUrl: 'https://sagarmasale.vercel.app/',
       featured: false
     }
+
   ];
 
   return (
@@ -66,7 +69,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-64 lg:h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-64 lg:h-full object-contain group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>

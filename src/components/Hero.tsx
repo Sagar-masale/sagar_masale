@@ -48,19 +48,19 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16">
             <a
-              href="#"
+              href="https://github.com/Sagar-masale"
               className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:scale-110 text-slate-600 hover:text-blue-600"
             >
               <Github size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/sagar-masale/"
               className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:scale-110 text-slate-600 hover:text-blue-600"
             >
               <Linkedin size={20} />
             </a>
             <a
-              href="#"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sagarmasalee@gmail.com"
               className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-200 hover:scale-110 text-slate-600 hover:text-blue-600"
             >
               <Mail size={20} />
@@ -71,9 +71,9 @@ const Hero = () => {
         {/* Scroll indicator */}
         <button
           onClick={scrollToAbout}
-          className="absolute bottom-95 left-1/2 transform -translate-x-1/2 animate-bounce"
+          className="absolute bottom-95 left-1/2 transform -translate-x-1/2 animate-pulse"
         >
-          <ArrowDown className="text-slate-400 hover:text-blue-600 transition-colors duration-200" size={24} />
+          <ArrowDown className="text-slate-700 hover:text-blue-600 transition-colors duration-200" size={24} />
         </button>
       </div>
     </section>
