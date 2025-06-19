@@ -27,14 +27,13 @@ const Hero = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-800 mb-6">
             Hello, I'm{' '}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Alex Johnson
+              Sagar Masale
             </span>
           </h1>
           
           <p className="text-xl sm:text-2xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            A passionate{' '}
-            <span className="font-semibold text-blue-600">Full Stack Developer</span>
-            {' '}crafting beautiful digital experiences with modern technologies
+            A passionate <span className="font-semibold text-blue-600">React & Full Stack Developer</span>{' '}
+            building scalable web applications using modern technologies like MongoDB, Express, React, and Node.js.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -72,7 +71,7 @@ const Hero = () => {
         {/* Scroll indicator */}
         <button
           onClick={scrollToAbout}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+          className="absolute bottom-95 left-1/2 transform -translate-x-1/2 animate-bounce"
         >
           <ArrowDown className="text-slate-400 hover:text-blue-600 transition-colors duration-200" size={24} />
         </button>

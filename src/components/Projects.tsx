@@ -1,17 +1,19 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import pbsimg from "./images/pbsjewellers.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
+      title: 'PBS Jewellers Website',
+      description: 'A modern jewelry e-commerce website built with React, Node.js, and MongoDB. Features include OTP verification, JWT-based authentication, product pages, and admin controls.',
+      image: pbsimg,
+      technologies: ['React', 'Node.js', 'MongoDB', 'Firebase', 'JWT'],
       githubUrl: '#',
-      liveUrl: '#',
+      liveUrl: 'https://pbsjewellers.vercel.app/',
       featured: true
     },
+
     {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
@@ -44,12 +46,13 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-slate-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            A showcase of my recent work and the technologies I love working with
-          </p>
-        </div>
+       <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-slate-800 mb-4">Projects That Define My Craft</h2>
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          A collection of my best work focused on clean code and real-world problem solving.
+        </p>
+      </div>
+
 
         <div className="grid gap-8">
           {/* Featured Projects - Large Cards */}
