@@ -1,9 +1,12 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { Lock, ExternalLink, Github } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 import pbsimg from "./images/pbsjewellers.png";
 import proEliteImg from "./images/proElite.png"
 import FolioImg from "./images/Folio.png"
 const Projects = () => {
+  const { toast } = useToast();
+
   const projects = [
     {
       title: 'PBS Jewellers Website',
@@ -96,13 +99,42 @@ const Projects = () => {
                   </div>
 
                   <div className="flex gap-4">
-                    <a
-                      href={project.githubUrl}
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors duration-200"
-                    >
-                      <Github size={18} />
-                      Code
-                    </a>
+                    <div className="relative">
+                        <button
+                          onClick={() => {
+                            if (
+                              project.title === "PBS Jewellers Website" ||
+                              project.title === "ProElite Technologies Website"
+                            ) {
+                              toast({
+                                title: "Private Repository",
+                                description: "This project's source code is private for security reasons.",
+                              });
+                            } else {
+                              window.open(project.githubUrl, "_blank");
+                            }
+                          }}
+                          className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors duration-200
+                            ${
+                              project.title === "PBS Jewellers Website" || project.title === "ProElite Technologies Website"
+                                ? "bg-slate-400 text-white cursor-not-allowed"
+                                : "bg-slate-800 text-white hover:bg-slate-700"
+                            }`}
+                        >
+                          <Github size={18} />
+                          Code
+                        </button>
+
+  {(project.title === "PBS Jewellers Website" ||
+    project.title === "ProElite Technologies Website") && (
+    <div className="absolute -top-2 -right-2 bg-white rounded-full p-1 shadow">
+      <Lock size={16} className="text-red-500" />
+    </div>
+  )}
+</div>
+
+
+
                     <a
                       href={project.liveUrl}
                       className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
