@@ -62,8 +62,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'sagarmasalee@gmail.com',
-    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=sagarmasalee@gmail.com'
+    value: 'sagarmasale27@gmail.com',
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=sagarmasale27@gmail.com'
   },
   {
     icon: Phone,

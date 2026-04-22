@@ -28,15 +28,7 @@ const Projects = () => {
       featured: true
     },
 
-    {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application that provides current conditions and forecasts with beautiful data visualizations.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: false
-    },
+
     {
       title: 'Portfolio Website',
       description: 'A responsive and performance-optimized portfolio built with modern technologies. It showcases my projects, skills, and experience with smooth transitions and clean UI.',

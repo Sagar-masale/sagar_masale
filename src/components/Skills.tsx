@@ -19,7 +19,8 @@ const skillCategories = [
       { name: 'Node.js', level: 85 },
       { name: 'Express.js', level: 64 },
       { name: 'MongoDB', level: 74 },
-      { name: 'JWT Auth', level: 85 }
+      { name: 'JWT Auth', level: 85 },
+      { name: 'Java', level: 75 }
     ]
   },
   {
@@ -42,6 +43,7 @@ const skillCategories = [
 
 
 const technologies = [
+  'Java',
   'React.js',
   'TypeScript',
   'Tailwind CSS',
